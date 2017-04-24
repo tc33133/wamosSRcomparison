@@ -36,7 +36,7 @@ dataArray{1}=dateVec;
 % column 30 is last numberic column
 
 for i=2:29
-    a=dataArray{i};
+    a=double(dataArray{i});
     ind=find(a==-9|a==-8);
     a(ind)=NaN;   
     dataArray{i}=a;
